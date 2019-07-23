@@ -30,7 +30,7 @@ Things you may want to cover:
 |name|string|null: false|
 ### Association
 - has_many :message
-- has_many :group
+- has_many  :group,  through:  :members
 
 
 ## Groupテーブル
