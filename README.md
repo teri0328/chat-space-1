@@ -27,14 +27,14 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|name|string|null: false|
+|name|string|null: false、index: true|
 ### Association
 - has_many :messages
 - has_many :members
 - has_many  :groups,  through:  :members
 
 
-## Groupテーブル
+## Groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -45,14 +45,14 @@ Things you may want to cover:
 - has_many :users, through: :members
 - has_many :members
 
-## messageテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |body|text||
 |image|string||
-|group_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -63,8 +63,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
