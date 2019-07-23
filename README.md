@@ -38,7 +38,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :messages
@@ -49,8 +49,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text||
+|image|string||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
