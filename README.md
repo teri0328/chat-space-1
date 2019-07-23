@@ -42,7 +42,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :message
-- belongs_to :user
+- has_many :users, through: :members
 
 
 ## messageテーブル
