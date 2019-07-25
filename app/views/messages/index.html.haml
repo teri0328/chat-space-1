@@ -1,0 +1,48 @@
+.container
+  = render 'left_sidebar'
+  .chat
+    .header
+      .header-left
+        .header-left__title
+          グループ名
+          .header-left__member      
+            Member：メンバー名
+      .header-right
+        .header-right__button
+          Edit
+    .contents
+      .content
+        .content-top
+          .content-top__name
+            名前
+          .content-top__date
+            2019/07/22(Mon) 17:00:12
+        .content-bottom
+          .content-bottom__message
+            メッセージ
+      .content
+        .content-top
+          .content-top__name
+            名前
+          .content-top__date
+            2019/07/22(Mon) 17:00:12
+        .content-bottom
+          .content-bottom__message
+            メッセージ
+      .content
+        .content-top
+          .content-top__name
+            名前
+          .content-top__date
+            2019/07/22(Mon) 17:00:12
+        .content-bottom
+          .content-bottom__message
+            メッセージ  
+    .form
+      %form.form__flex
+        .form__flex__main
+          %input.form__flex__main__content{type: 'text',placeholder: 'type a message'}        
+            %label.form__flex__main__image
+              = fa_icon 'picture-o', class: 'icon'
+              %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}

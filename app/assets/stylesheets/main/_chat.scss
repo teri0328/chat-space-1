@@ -1,0 +1,100 @@
+.chat{
+  width: calc(100% - 300px);
+  .header{
+    box-sizing: border-box;
+    height: 100px;
+    border-bottom: solid 1px #eeeeee;
+    padding: 0 40px;
+    .header-left{
+      padding-top:35px;
+      float: left;
+      &__title{
+        font-size: 20px;
+        color: $blackgray;
+      }
+      &__member{
+        font-size:$deta-member-size;
+        color: $gray;
+        padding-top: 15px;
+      }      
+    }         
+    .header-right{
+      &__button{
+        float: right;
+        border: solid 1px $light-blue;
+        padding:10px 20px;
+        color: $light-blue;
+        margin-top: 28px;
+      }
+    }
+  }
+  .contents{
+    box-sizing: border-box;
+    background-color: #fafafa;
+    padding: 46px 40px 0;
+    height: calc(100vh - 100px - 90px);
+    .content{
+      .content-top{
+        margin-bottom: 10px;
+        display: flex;
+        &__name{
+          margin-right: 10px;
+          font-size: $message-size;
+          font-weight: bold;
+          color: $blackgray;
+        }
+        &__date{
+          font-size: $deta-member-size;
+          color: $gray;
+        }
+      }
+      .content-bottom{
+        &__message{
+          padding-bottom: 40px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .form{
+    &__flex{
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      background-color: #ddd;
+      height: 90px;
+      padding: 20px 40px 20px 40px;
+      &__main{
+        position: relative;
+        width: 100%;
+        &__content{
+          width: calc(100% - 20px);
+          height: 50px;
+          border: none;
+          padding: 0 10px;
+        }
+          &__image{
+            font-size: 20px;
+            line-height: 50px;
+            display: inline-block;  
+            cursor: pointer; 
+            position: absolute;
+            top: 1px;
+            right: 10px;
+          }
+          .hidden{
+            display: none;
+          }
+      }
+    }
+    
+    &__submit{
+      background-color: $light-blue;
+      color: $white;
+      height: 50px;
+      padding: 0 30px;
+      margin-left: 10px; 
+      }
+  } 
+}
+
