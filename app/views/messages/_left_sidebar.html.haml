@@ -1,27 +1,19 @@
 .left_sidebar
   .header
     %h1.header__name
-      名前
+      = current_user.name
     .header__icon
       .header__icon__fa 
-        = link_to '#' do
+        = link_to new_group_path do
           = fa_icon 'pencil-square-o', class: 'icon'
       .header__icon__fa
-        = link_to '#' do
-          = fa_icon 'cog', class: 'icon' 
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog', class: 'icon'
   .groups
-    .group
-      .group__name
-        グループ名
-      .group__text
-        こんにちわ
-    .group
-      .group__name
-        グループ名
-      .group__text
-        こんにちわ
-    .group
-      .group__name
-        グループ名
-      .group__text
-        こんにちわ
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__text
+            = group.show_last_message
