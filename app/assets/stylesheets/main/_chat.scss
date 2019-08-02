@@ -32,7 +32,9 @@
     background-color: #FAFAFA;
     box-sizing: border-box;
     padding: 46px 40px 0;
-    height: calc(100% - 100px);
+    overflow: auto;
+    height: calc(100vh - 100px - 90px);
+  
     .message {
       .upper-message {
         display: flex;
@@ -42,7 +44,7 @@
           font-weight: bold;
         }
         &__date {
-          color: $white;
+          color: #ccc;
           font-size: 12px;
           padding-left: 10px;
         }
