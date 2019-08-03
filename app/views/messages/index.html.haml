@@ -9,7 +9,7 @@
           Member：名前
       .header-right
         .header-right__button
-          EDIT
+          = link_to "EDIT","edit",class: 'button' 
     .messages
       = render @messages
     = form_for [@group, @message] do |f|

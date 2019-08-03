@@ -25,6 +25,10 @@
         padding:10px 20px;
         color: $light-blue;
         margin-top: 28px;
+        .button{
+          color: $light-blue;
+          cursor: pointer;
+        }
       }
     }
   }
