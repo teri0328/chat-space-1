@@ -63,3 +63,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'pry-rails'
+
+gem 'better_errors'
+gem 'rails-i18n'
+
