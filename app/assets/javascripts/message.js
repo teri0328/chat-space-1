@@ -64,7 +64,7 @@ $(function(){
        });
      })
      .fail(function () {    
-       console.log('error');
+        alert('メッセージの取得に失敗しました');
      });
     };
    }
