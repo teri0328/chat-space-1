@@ -67,3 +67,6 @@ gem 'pry-rails'
 gem 'better_errors'
 gem 'rails-i18n'
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end
