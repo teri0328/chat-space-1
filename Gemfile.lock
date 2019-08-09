@@ -218,7 +218,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors
   byebug
   carrierwave
   coffee-rails (~> 4.2)
