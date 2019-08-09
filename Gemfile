@@ -64,7 +64,6 @@ gem 'mini_magick'
 
 gem 'pry-rails'
 
-
 gem 'rails-i18n'
 
 group :production do
